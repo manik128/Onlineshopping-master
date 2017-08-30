@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/myborder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:padding="5dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+
+        android:id="@+id/tvlinepops"
+        android:text="sort by"
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#c6c4c4"
+        android:id="@+id/tvlinepop"
+        android:layout_below="@+id/tvlinepops"
+        android:layout_height="1dp" />
+
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_below="@+id/tvlinepop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radiorelevance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relevance"
+            />
+
+        <RadioButton
+            android:id="@+id/radiopopularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popularity" />
+        <RadioButton
+            android:id="@+id/radioprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price-Low to high" />
+
+        <RadioButton
+            android:id="@+id/radiohigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price-High to low" />
+        <RadioButton
+            android:id="@+id/radionewest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Newest First" />
+
+
+    </RadioGroup>
+
+</RelativeLayout>
+
+
